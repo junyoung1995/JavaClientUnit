@@ -6,8 +6,8 @@ public class JavaClientGetJUnitTest {
 	@Test
 	public void testGetRequest() {
 		String url = "http://localhost:8087/servletTest01/test";
+		String data = "Get Method";
 		
-		String response = JavaClientGet.getRequest(url);
-		System.out.println(String.format("getRequest = %s", response));
+		httpGetConnection(url, data);
 	}
 }
